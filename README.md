@@ -22,15 +22,22 @@ or
 
 Clone the repo or download the python script, use with root privileges
 ```
-sudo python3 parpl.py <output base filename>
-```
+sudo python3 parpl.py
 
+sudo python3 parpl.py <output base filename>
+
+sudo python3 parpl.py <output base filename> <interface>
+```
+NOTE: Interface option requires filename (sys.argv positional arguments), will convert argument handling to argparse
 
 ## Outputs:
 
 stdout, also will save into: 
 ```
 <base filename>_raw_results.txt
+
+#for use with ```nmap -iL ```
+<base filename>_ip_list.txt
 
 #for adding and removing static entries
 <base filename>_arp_add.sh 
